@@ -44,3 +44,41 @@ header h1{
 .elemento:hover{
   background-color: #4c6472;
 }
+section{
+  background-color:  #82c3a6;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+section img {
+  width: 80%;
+  height: 400px;
+}
+article{
+  background-color: #d5c75f ;
+  padding: 15px;
+}
+.cuerpo{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.img{
+  width:40%;
+  text-align: center;
+  text-decoration: underline;
+}
+.img img{
+  border: 2px solid black;
+  width:100%;
+  height: 300px;
+  box-shadow: 3px 3px #82c3a6;
+}
+.trans:hover{
+  transform: rotate(-10deg);
+}
+.retrato:hover{
+  animation: animacion 1s;
+}
