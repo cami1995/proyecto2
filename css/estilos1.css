@@ -9,9 +9,11 @@ body{
   margin: auto;
   display: flex;
   flex-flow: column ;
-
+  animation: inicio 1.5s;
 }
-
+#menu div a:active{
+    animation: inicio 1.5s;
+}
 .cabecera{
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -81,4 +83,69 @@ article{
 }
 .retrato:hover{
   animation: animacion 1s;
+}
+@-webkit-keyframes animacion{
+from{
+  position: relative;
+  bottom: 5px;
+}
+to{
+  position: relative;
+  left:20px;
+}}
+@-webkit-keyframes inicio{
+10%{
+  margin-top: 150%
+}
+90%{
+  margin-top: -5%
+}
+100%{
+  margin-top: 0%
+}}
+footer{
+  background-color:  #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.pie div{
+  width: 20%;
+  text-align: center;
+}
+@media (max-width:720px){
+.contenedor{
+  width: 98%;
+}
+.cabecera{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+header h1{
+  text-align: center;
+  margin: auto;
+}
+section img {
+  width: 95%;
+}
+.cuerpo{
+  display: flex;
+  flex-flow: column;
+}
+.img{
+  width:90%;
+  margin: auto;
+}
+footer{
+  display: flex;
+  flex-flow: column;
+}
+.pie div{
+  width: 80%;
+  text-align: left;
 }
