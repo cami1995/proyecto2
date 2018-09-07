@@ -9,6 +9,7 @@ body{
   margin: auto;
   display: flex;
   flex-flow: column ;
+  justify-content: space-between;
   animation: inicio 1.5s;
 }
 #menu div a:active{
